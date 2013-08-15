@@ -21,7 +21,8 @@ This demo includes the following features:
 ## Installation
 
 1. Clone this repository.
-1. Create a database for import.
+1. Create a database for import: `mysqladmin -u root -p create [database-name]`
+	* [database-name] is the database name for import.
 1. Import the sql file: `mysql -u [mysql-user] -p -h [mysql-host] [database-name] < hsngtodo2013.sql`
 	* [mysql-user] is your MySQL username.
 	* [mysql-host] is your MySQL address.  Default is localhost if the MySQL is right on local.
@@ -32,3 +33,7 @@ This demo includes the following features:
 	* $db_name="hsngtodo2013";	//database name
 	* $db_user="hsng";		//database login username
 	* $db_pass="hsng";		//database login password
+
+## Note
+
+This is just a simple prototype of a todo list.  There are several security problems and only have few features.  Strongly not recommand for formal usage.
